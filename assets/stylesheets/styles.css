@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "anders";
+    src: url(../fonts/anders.woff2);
+    src: url(../fonts/anders.woff);
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url(../background.jpg);
+    background-size: 50%;
+    font-size: 16px;
+}
+
+header {
+    background-color: #f9e7d9;
+    box-sizing: border-box;
+    margin: 2% 2% 0 2%;
+    padding: 1% 0;
+}
+
+h1 {
+    color: #a54a2f;
+    font-family: "anders", serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+nav {
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+nav a {
+    border-right: solid 2px #e49d7d;
+    padding: 0 1%;
+}
+
+nav a:last-child {
+    border: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+}
+
+h2 {
+    color: #e49d7d;
+    font-family: "anders", serif;
+    font-size: 36px;
+}
+
+.left {
+    background-color: #fff9f3;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1% 0 2%;
+    padding: 2% 5%;
+    width: 70%;
+}
+
+p {
+    line-height: 140%;
+    margin: 0 0 2% 0;
+}
+
+.right {
+    background-color: #faf0e9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2% 0 1%;
+    padding: 2%;
+    width: 30%;
+}
+
+summary::marker {
+    color: #e49d7d;
+}
+
+summary {
+    margin-bottom: 4%;
+}
+
+fieldset {
+    border: dotted #e49d7d;
+    padding: 5%;
+}
+
+select, input {
+    margin-bottom: 4%;
+}
+
+.submit {
+    margin-top: 4%;
+    margin-right: 1%;
+}
+
+.reset {
+    margin-top: 4%;
+}
+
+footer {
+    background-color: #f9e7d9;
+    box-sizing: border-box;
+    margin: 0 2%;
+    padding: 2% 0;
+}
+
+footer p {
+    color: #a54a2f;
+    font-size: 14px;
+    line-height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+a:link {
+    color: #808080;
+}
+
+a:hover {
+    color: #a9c4bb;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column;
+    }
+    .left {
+        margin: 0 2%;
+        width: 96%;
+    }
+    .right {
+        margin: 0 2%;
+        width: 96%;
+    }
+}
